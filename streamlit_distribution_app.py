@@ -111,7 +111,7 @@ if len(fit_results) > 0:
     csv_buffer = io.StringIO()
     df_export = pd.DataFrame(table_data)
     df_export.to_csv(csv_buffer, index=False)
-    st.download_button("📥 Download Fit Results as CSV", csv_buffer.getvalue(), "fit_results.csv", "text/csv")
+    st.download_button("Download Fit Results as CSV", csv_buffer.getvalue(), "fit_results.csv", "text/csv")
 
     # Show selected distribution
     selected_dist = None
