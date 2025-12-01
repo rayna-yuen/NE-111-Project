@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import io
 
 st.set_page_config(page_title="Distribution Fitter", layout="wide")
-st.title("📊 Distribution Fitter App")
+st.title(" Distribution Fitter App")
 
 # ------------------------------
 # Sidebar: Data Input
@@ -100,7 +100,7 @@ for i in range(len(fit_results)):
             fit_results[i] = fit_results[j]
             fit_results[j] = temp
 
-st.subheader("✅ Best-Fitting Distributions")
+st.subheader(" Best-Fitting Distributions")
 if len(fit_results) > 0:
     table_data = []
     for r in fit_results:
